@@ -6,6 +6,7 @@ package com.course.system.controller;
 
 import com.course.server.pojo.Test;
 import com.course.server.service.TestService;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,8 +20,8 @@ public class TestController {
     @Resource
     public TestService testService;
 
-//    @GetMapping(value = "/hell",produces = {"application/json;charset=UTF-8"})
-    @RequestMapping("hell")
+    @GetMapping(value = "/hell",produces = {"application/json;charset=UTF-8"})
+//    @RequestMapping("hell")
     public List<Test> test(){
         return testService.list();
 //        return "success";
