@@ -7,8 +7,20 @@
 		<module>eureka</module>
 		<module>system</module>
 		<module>gateway</module>
-        <module>server</module>
-    </modules>
+		<module>server</module>
+	</modules>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+			<version>3.4.6</version>
+			<scope>compile</scope>
+		</dependency>
+	</dependencies>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>

@@ -1,4 +1,4 @@
-package com.course.system.pojo;
+package com.course.server.pojo;
 
 public class Test {
     private String id;

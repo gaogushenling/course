@@ -1,8 +1,7 @@
 package com.course.server.service;
 
-import com.course.server.domain.Test;
 import com.course.server.mapper.TestMapper;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.course.server.pojo.Test;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -15,6 +14,9 @@ public class TestService {
     private TestMapper testMapper;
 
     public List<Test> list() {
-        return testMapper.selectByExample(null);
+        return testMapper.list();
     }
+
+    ;
+
 }
