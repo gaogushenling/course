@@ -2,6 +2,7 @@ package com.course.server.service;
 
 import com.course.server.mapper.TestMapper;
 import com.course.server.pojo.Test;
+import com.course.server.pojo.TestExample;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -14,7 +15,9 @@ public class TestService {
     private TestMapper testMapper;
 
     public List<Test> list() {
-        return testMapper.list();
+        TestExample testExample = new TestExample();
+        testExample.setOrderByClause("id desc");
+        return testMapper.selectByExample(testExample);
     };
 
 }

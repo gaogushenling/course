@@ -21,10 +21,8 @@ public class TestController {
     public TestService testService;
 
     @GetMapping(value = "/hell",produces = {"application/json;charset=UTF-8"})
-//    @RequestMapping("hell")
     public List<Test> test(){
         return testService.list();
-//        return "success";
     }
 
 }
