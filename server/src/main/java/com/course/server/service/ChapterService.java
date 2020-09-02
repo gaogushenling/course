@@ -4,6 +4,7 @@ import com.course.server.mapper.ChapterMapper;
 import com.course.server.pojo.Chapter;
 import com.course.server.pojo.ChapterExample;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.annotation.Resource;
 import java.util.List;
