@@ -7,10 +7,10 @@
             <div class="center">
               <h1>
                 <i class="ace-icon fa fa-leaf green"></i>
-                <span class="red">Ace</span>
-                <span class="white" id="id-text2">Application</span>
+                <span class="red">course</span>
+                <span class="white" id="id-text2">登录</span>
               </h1>
-              <h4 class="blue" id="id-company-text">&copy; Company Name</h4>
+              <h4 class="blue" id="id-company-text">&copy; zs</h4>
             </div>
 
             <div class="space-6"></div>
@@ -21,7 +21,7 @@
                   <div class="widget-main">
                     <h4 class="header blue lighter bigger">
                       <i class="ace-icon fa fa-coffee green"></i>
-                      Please Enter Your Information
+                     请输入您的信息
                     </h4>
 
                     <div class="space-6"></div>
@@ -47,12 +47,12 @@
                         <div class="clearfix">
                           <label class="inline">
                             <input type="checkbox" class="ace" />
-                            <span class="lbl"> Remember Me</span>
+                            <span class="lbl"> 记住</span>
                           </label>
 
                           <button type="button" class="width-35 pull-right btn btn-sm btn-primary">
                             <i class="ace-icon fa fa-key"></i>
-                            <span class="bigger-110">Login</span>
+                            <span class="bigger-110">登录</span>
                           </button>
                         </div>
 
@@ -61,7 +61,7 @@
                     </form>
 
                     <div class="social-or-login center">
-                      <span class="bigger-110">Or Login Using</span>
+                      <span class="bigger-110">三方登录</span>
                     </div>
 
                     <div class="space-6"></div>
@@ -85,13 +85,13 @@
                     <div>
                       <a href="#" data-target="#forgot-box" class="forgot-password-link">
                         <i class="ace-icon fa fa-arrow-left"></i>
-                        I forgot my password
+                        忘记密码
                       </a>
                     </div>
 
                     <div>
                       <a href="#" data-target="#signup-box" class="user-signup-link">
-                        I want to register
+                        注册新账号
                         <i class="ace-icon fa fa-arrow-right"></i>
                       </a>
                     </div>
@@ -216,21 +216,6 @@
                 </div><!-- /.widget-body -->
               </div><!-- /.signup-box -->
             </div><!-- /.position-relative -->
-
-            <div class="navbar-fixed-top align-right">
-              <br />
-              &nbsp;
-              <a id="btn-login-dark" href="#">Dark</a>
-              &nbsp;
-              <span class="blue">/</span>
-              &nbsp;
-              <a id="btn-login-blur" href="#">Blur</a>
-              &nbsp;
-              <span class="blue">/</span>
-              &nbsp;
-              <a id="btn-login-light" href="#">Light</a>
-              &nbsp; &nbsp; &nbsp;
-            </div>
           </div>
         </div><!-- /.col -->
       </div><!-- /.row -->
@@ -239,9 +224,9 @@
 </template>
 
 <script>
-  document.getElementsByTagName('body')[0].setAttribute('class', 'login-layout light-login');
+  // document.getElementsByTagName('body')[0].setAttribute('class', 'login-layout light-login');
+  $('body').attr('class', 'login-layout light-login');
 export default {
   name: 'App',
-
 }
 </script>
