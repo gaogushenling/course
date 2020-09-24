@@ -134,7 +134,7 @@
     },
     methods: {
       login () {
-        this.$router.push("/admain")
+        this.$router.push("/admin")
       }
     }
   }
