@@ -4,7 +4,7 @@ package com.course.system.controller;
 //import com.course.server.service.TestService;
 
 
-import com.course.server.pojo.Test;
+import com.course.server.domain.Test;
 import com.course.server.service.TestService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
