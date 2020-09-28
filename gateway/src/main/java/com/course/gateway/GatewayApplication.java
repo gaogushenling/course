@@ -30,7 +30,7 @@ public class GatewayApplication {
 	 * https://www.cnblogs.com/wang715100018066/p/12022372.html
 	 * @return
 	 */
-/*	@Bean
+	@Bean
 	public CorsWebFilter corsFilter() {
 		CorsConfiguration config = new CorsConfiguration();
 
@@ -44,6 +44,6 @@ public class GatewayApplication {
 		source.registerCorsConfiguration("/**", config);
 
 		return new CorsWebFilter(source);
-	}*/
+	}
 
 }
