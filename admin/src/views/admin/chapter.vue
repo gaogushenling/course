@@ -141,6 +141,8 @@
       _this.$refs.pagination.size=5;
       _this.list(1);
       // sidebar激活样式方法一
+
+
       // this.$parent.activeSidebar("business-chapter-sidebar");
     },
     methods: {
@@ -149,7 +151,7 @@
        */
       add() {
       let _this = this;
-        /*     _this.chapter = {};*/
+         _this.chapter = {};
         $("#form-modal").modal("show");
       },
       /**
@@ -162,20 +164,29 @@
           size: _this.$refs.pagination.size,
         }).then((response)=>{
           // console.log("查询大章列表结果：", response);
-          _this.chapters = response.data.list;
+          let resp = response.data;
+          _this.chapters = resp.content.list;
+          // console.log(resp,resp.content,resp.content.list);
           //重新渲染组件
-          _this.$refs.pagination.render(page, response.data.total)
+          _this.$refs.pagination.render(page, resp.content.total)
         })
       }, /**
        * 保存
        */
-      save() {
+      save(page) {
         let _this = this;
         _this.$ajax.post('http://127.0.0.1:9000/business/admin/chapter/save',
           _this.chapter,
         ).then((response)=>{
           // console.log("保存大章列表结果：", response);
-          //重新渲染组件
+          let resp = response.data;
+          if (resp.success) {
+            $("#form-modal").modal("hide");
+            _this.list(1);
+            // Toast.success("保存成功！");
+          } else {
+            // Toast.warning(resp.message)
+          }
         })
       }
     }
